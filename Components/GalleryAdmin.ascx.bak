@@ -1,0 +1,42 @@
+<%@ Control Language="vb" AutoEventWireup="false" Codebehind="GalleryAdmin.ascx.vb" Inherits="Gallery.GalleryAdmin" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+<h1>Gallery Management</h1>
+<div class="outline">
+	<h2>New Gallery Name</h2>
+	<asp:textbox id="txtGalleryName" runat="server" Text=""></asp:textbox><br>
+	<asp:Label id="lblResults" runat="server"></asp:Label><br>
+	<asp:button id="btnSubmit" onclick="Submit_Click" runat="server" Text="Submit"></asp:button>
+</div>
+<br>
+<div class="outline">
+	<h2>Current Galleries</h2>
+	<span style="FONT-SIZE:x-small;COLOR:red">*Do NOT delete default gallery named 
+		'General'<br>
+		*Photos left in deleted Galleries will be set to the default gallery </span>
+	<asp:DataGrid id="drgGall" Width="75%" OnEditCommand="dgrdCitationCategory_EditCommand"
+		OnUpdateCommand="drgdCitationCategory_UpDateCommand" OnDeleteCommand="drgdCitationCategory_DeleteCommand"
+		OnCancelCommand="drgdCitationCategory_CancelCommand" DataKeyField="ID" AutoGenerateColumns="false"
+		Runat="Server">
+		<Columns>
+			<Asp:TemplateColumn>
+				<HeaderTemplate>
+					<b>Gallery Name</b>
+				</HeaderTemplate>
+				<itemTemplate>
+					<%# Container.DataItem("NAME")%>
+				</itemTemplate>
+				<EditItemTemplate>
+					<asp:textBox ID="txtCitationDesc" Text='<%# Container.DataItem("NAME")%>' Runat="server" />
+				</EditItemTemplate>
+			</Asp:TemplateColumn>
+			<asp:templatecolumn>
+				<ItemTemplate>
+					<asp:button CommandName="Edit" Text="Edit" runat="server" ID="Button6" />
+				</ItemTemplate>
+				<EditItemTemplate>
+					<asp:button CommandName="Update" Text="Update" runat="server" ID="Button7" />
+					<asp:button CommandName="Delete" Text="Delete" style="margin:2px;" runat="server" ID="Button8" />
+					<asp:button CommandName="Cancel" Text="Cancel" runat="server" ID="Button9" />
+				</EditItemTemplate>
+			</asp:templatecolumn>
+		</Columns>
+	</asp:DataGrid></div>

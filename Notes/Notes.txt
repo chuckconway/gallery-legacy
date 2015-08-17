@@ -1,0 +1,6 @@
+November 1, 2003 11:44 pm
+
+*Upgraded from MySql.Net .65 to .72 -- getting input errors in the command parameters.
+*PhotoMgmtAdmin.ascx.vb attempted to add dropdownlist in DataGrid edit mode. It did not work.
+Lines 168-190 are added non functioning code.
+

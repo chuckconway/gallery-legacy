@@ -1,0 +1,37 @@
+body 
+{ 
+	
+	font-family: verdana;
+	padding:0px;
+	margin:0px;
+	font-size:10px;
+	font-weight: normal;
+	color: #000;
+	background:#fff;
+	
+}
+
+img 
+{
+	border:1px solid #fff;
+}
+
+div.frame
+{
+	
+	padding:10px;
+	border:1px solid #fff;
+	background:#000;
+		
+}
+div.padding
+{
+	margin-left:5px;
+	margin-right:5px;
+}
+
+div.center
+{
+	text-align:center;
+}
+

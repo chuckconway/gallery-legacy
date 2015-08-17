@@ -1,0 +1,338 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{4B394ED7-84C2-49D7-BA58-A6838B850AB1}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Gallery"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "Gallery"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "system.serviceprocess"
+                    AssemblyName = "System.ServiceProcess"
+                    HintPath = "..\..\..\windows\assembly\gac\system.serviceprocess\1.0.5000.0__b03f5f7f11d50a3a\system.serviceprocess.dll"
+                />
+                <Reference
+                    Name = "System.Configuration.Install"
+                    AssemblyName = "System.Configuration.Install"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Configuration.Install.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "ByteFX.Data"
+                    AssemblyName = "ByteFX.Data"
+                    HintPath = "bin\ByteFX.Data.dll"
+                />
+                <Reference
+                    Name = "SharpZipLib"
+                    AssemblyName = "SharpZipLib"
+                    HintPath = "bin\SharpZipLib.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "gallery.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "gallery.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "gallerypics.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.vb"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LargeImage.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Photos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Photos.aspx.vb"
+                    DependentUpon = "Photos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Photos.aspx.resx"
+                    DependentUpon = "Photos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ShowImage.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Admin.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Admin.aspx.vb"
+                    DependentUpon = "Admin.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Admin.aspx.resx"
+                    DependentUpon = "Admin.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "C3Admin\Components\Blank.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Components\Blank.ascx.vb"
+                    DependentUpon = "Blank.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Components\Blank.ascx.resx"
+                    DependentUpon = "Blank.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "C3Admin\Components\footer.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Components\footer.ascx.vb"
+                    DependentUpon = "footer.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Components\footer.ascx.resx"
+                    DependentUpon = "footer.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "C3Admin\Components\GalleryAdmin.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Components\GalleryAdmin.ascx.vb"
+                    DependentUpon = "GalleryAdmin.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Components\GalleryAdmin.ascx.resx"
+                    DependentUpon = "GalleryAdmin.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "C3Admin\Components\nav.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Components\nav.ascx.vb"
+                    DependentUpon = "nav.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Components\nav.ascx.resx"
+                    DependentUpon = "nav.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "C3Admin\Components\NewPhotoAdmin.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Components\NewPhotoAdmin.ascx.vb"
+                    DependentUpon = "NewPhotoAdmin.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Components\NewPhotoAdmin.ascx.resx"
+                    DependentUpon = "NewPhotoAdmin.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "C3Admin\Components\PhotoMgmtAdmin.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "C3Admin\Components\PhotoMgmtAdmin.ascx.vb"
+                    DependentUpon = "PhotoMgmtAdmin.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "C3Admin\Components\PhotoMgmtAdmin.ascx.resx"
+                    DependentUpon = "PhotoMgmtAdmin.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Components\GalleryPhotos.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Components\GalleryPhotos.ascx.vb"
+                    DependentUpon = "GalleryPhotos.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\GalleryPhotos.ascx.resx"
+                    DependentUpon = "GalleryPhotos.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Components\ShowGalleries.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Components\ShowGalleries.ascx.vb"
+                    DependentUpon = "ShowGalleries.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\ShowGalleries.ascx.resx"
+                    DependentUpon = "ShowGalleries.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "Config\" />
+                <File
+                    RelPath = "Data\MySQLData.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Framework\Misc.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Notes\Notes.txt"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+
